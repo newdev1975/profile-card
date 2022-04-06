@@ -1,0 +1,17 @@
+/* Grid system */
+
+@include for-desktop-up() {
+    body {
+      background-position: right 47vw bottom 45vh, left 36vw top 44vh;    
+    }
+
+    .card {
+        width: 21.875rem;
+      }
+  }
+  
+  @include for-big-desktop-up() {
+    body {
+      background-position: right 50vw bottom 40vh, left 49vw top 50vh;
+    }
+  }

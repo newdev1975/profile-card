@@ -33,6 +33,7 @@ $font-size: 1.125rem;
   @media (min-width: 1440px) { @content; }
 }
 
+/* Global Typography */
 body {
   display: grid;
   place-content: center;
@@ -90,17 +91,5 @@ hr {
   a {
     color: $primary-clr;
     text-decoration: none;
-  }
-}
-
-@include for-desktop-up() {
-  body {
-    background-position: right 47vw bottom 45vh, left 36vw top 44vh;    
-  }
-}
-
-@include for-big-desktop-up() {
-  body {
-    background-position: right 50vw bottom 40vh, left 49vw top 50vh;
   }
 }
