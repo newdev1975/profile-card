@@ -1,0 +1,159 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Global Variables */
+/** Colors **/
+/** Fonts **/
+/* Global Mixins */
+/** Breakpoints **/
+body {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./../../images/bg-pattern-top.svg), url(./../../images/bg-pattern-bottom.svg);
+  background-position: right 40vw bottom 45vh, left 36vw top 44vh;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #19a2ae;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.125rem;
+}
+
+h3 {
+  padding-top: 1.25rem;
+  color: #2d3248;
+  font-weight: 700;
+}
+
+h3 span {
+  color: #6a6f81;
+  font-weight: 400;
+}
+
+h4 {
+  padding-top: .75rem;
+  margin-bottom: 1.625rem;
+  color: #969696;
+  font-size: .875rem;
+}
+
+h6 {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  color: #969696;
+  font-size: .6875rem;
+  letter-spacing: 1px;
+}
+
+hr {
+  width: 100%;
+  color: rgba(232, 232, 232, 0.2);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 3rem;
+  text-align: center;
+  width: 100%;
+  font-size: .75rem;
+  color: #cccccc;
+}
+
+.attribution a {
+  color: #2d3248;
+  text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-position: right 47vw bottom 45vh, left 36vw top 44vh;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-position: right 50vw bottom 40vh, left 49vw top 50vh;
+  }
+}
+
+.card {
+  width: 20.4375rem;
+  background-image: url(./../../images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 8.75rem;
+  background-color: white;
+  border-radius: 1rem;
+  text-align: center;
+  margin-inline: auto;
+  padding-top: 5.5rem;
+}
+
+.card__body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin-top: -0.1875rem;
+  padding: 0 1.75rem .5rem 1.5rem;
+}
+
+.card__body h3 {
+  margin-top: -0.0625rem;
+}
+
+.card img {
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+  border: 0.25rem solid white;
+}
+
+@media only screen and (min-width: 75rem) {
+  .card {
+    width: 21.875rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */

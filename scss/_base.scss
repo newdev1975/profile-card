@@ -1,0 +1,106 @@
+@import "reset";
+
+/* Global Variables */
+
+/** Colors **/
+$primary-bg-clr: hsl(185, 75%, 39%);
+$primary-clr: hsl(229, 23%, 23%);
+$secondary-clr: hsl(227, 10%, 46%);
+$third-clr: hsl(0, 0%, 59%);
+
+/** Fonts **/
+$font-family: "Kumbh Sans", sans-serif;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-size: 1.125rem;
+
+/* Global Mixins */
+
+/** Breakpoints **/
+@mixin for-phone-only {
+  @media (min-width: 375px) and (max-width: 575.98px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 576px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1440px) { @content; }
+}
+
+body {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image:
+      url(./../../images/bg-pattern-top.svg),
+      url(./../../images/bg-pattern-bottom.svg);
+  background-position: right 40vw bottom 45vh, left 36vw top 44vh;
+  background-repeat: no-repeat, no-repeat;
+  background-color: $primary-bg-clr;
+  font-family: $font-family;
+  font-size: $font-size;
+}
+
+h3 {
+  padding-top: 1.25rem;
+  color: $primary-clr;
+  font-weight: $font-weight-bold;
+
+  span {
+    color: $secondary-clr;
+    font-weight: $font-weight-normal;
+  }
+}
+
+h4 {
+  padding-top: .75rem;
+  margin-bottom: 1.625rem;
+  color: $third-clr;
+  font-size: .875rem;
+}
+
+h6 {
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  color: $third-clr;
+  font-size: .6875rem;
+  letter-spacing: 1px;
+}
+ 
+hr {
+  width: 100%;
+  color: hsla(0, 0%, 91%, .2);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 3rem;
+  text-align: center;
+  width: 100%;
+  font-size: .75rem;
+  color: hsl(0, 0%, 80%);
+  
+  a {
+    color: $primary-clr;
+    text-decoration: none;
+  }
+}
+
+@include for-desktop-up() {
+  body {
+    background-position: right 47vw bottom 45vh, left 36vw top 44vh;    
+  }
+}
+
+@include for-big-desktop-up() {
+  body {
+    background-position: right 50vw bottom 40vh, left 49vw top 50vh;
+  }
+}
