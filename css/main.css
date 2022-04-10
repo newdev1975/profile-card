@@ -55,7 +55,7 @@ body {
   place-content: center;
   width: 100%;
   min-height: 100vh;
-  background-image: url(./../../images/bg-pattern-top.svg), url(./../../images/bg-pattern-bottom.svg);
+  background-image: url(./../images/bg-pattern-top.svg), url(./../images/bg-pattern-bottom.svg);
   background-position: right 40vw bottom 45vh, left 36vw top 44vh;
   background-repeat: no-repeat, no-repeat;
   background-color: #19a2ae;
@@ -110,7 +110,7 @@ hr {
 
 .card {
   width: 20.4375rem;
-  background-image: url(./../../images/bg-pattern-card.svg);
+  background-image: url(./../images/bg-pattern-card.svg);
   background-repeat: no-repeat;
   background-size: 100% 8.75rem;
   background-color: white;
